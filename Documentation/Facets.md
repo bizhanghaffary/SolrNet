@@ -1,9 +1,9 @@
 # Faceting
-
+1 change
 SolrNet supports [faceted searching](https://cwiki.apache.org/confluence/display/solr/Faceting).
 
 There are basically three kinds of facet queries:
-
+2 change
  1. querying by field
  1. date facets
  1. arbitrary facet queries
@@ -80,7 +80,7 @@ foreach (var facet in r.FacetQueries) {
   Console.WriteLine("{0}: {1}", facet.Key, facet.Value);
 }
 ```
-
+4 change
 ### Pivot faceting
 Pivot faceting allows creating multidimensional facets. You can create a pivot facet with a main category and group by sub-categories. 
 
