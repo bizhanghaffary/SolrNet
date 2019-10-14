@@ -1,25 +1,26 @@
 # Faceting
-
+1 change
 SolrNet supports [faceted searching](https://cwiki.apache.org/confluence/display/solr/Faceting).
 
 There are basically three kinds of facet queries:
-
+2 change
  1. querying by field
  1. date facets
  1. arbitrary facet queries
-
+Changes to amned
 Facet queries are issued through the `FacetQueries` property of `QueryOptions`. Then the `QueryOptions` instance is passed to the server instance.
 
 #### Facet Limits
 There is a possibility that a field that you are using as a facet may have too many values and thus you may want to limit how many should be displayed. For this purpose we have the `Limit` property in `SolrFacetFieldQuery`.
-
+This is a test branch
 Simply set Limit to the number of values that you want Solr to return for the specific facet and you are good to go.
 ```c#
  var fq = new SolrFacetFieldQuery("pepe") {Limit = 5};
 ```
 this is the second change
 Or on the other hand your project requires all facets to be returned and since Solr's default value for `Limit` is 100 then you may need to set to a higher number or even an unlimited value which is -1.  Word of advise is that for performance considerations you set only to what you require and not unlimited.
-
+change i want to commit
+change i dont want to commit
 ### Querying by field
 Querying by field is handled by the `SolrFacetFieldQuery` class. Results are available through the `FacetFields` property.
 
@@ -79,7 +80,7 @@ foreach (var facet in r.FacetQueries) {
   Console.WriteLine("{0}: {1}", facet.Key, facet.Value);
 }
 ```
-
+4 change
 ### Pivot faceting
 Pivot faceting allows creating multidimensional facets. You can create a pivot facet with a main category and group by sub-categories. 
 
