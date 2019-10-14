@@ -9,6 +9,7 @@ There are basically three kinds of facet queries:
  1. arbitrary facet queries
 Changes to amned
 changes to push
+changes to push 2
 Facet queries are issued through the `FacetQueries` property of `QueryOptions`. Then the `QueryOptions` instance is passed to the server instance.
 
 #### Facet Limits
